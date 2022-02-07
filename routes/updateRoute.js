@@ -16,7 +16,7 @@ router.post('/', (req, res) => {
         else {
             exemploModel.findOneAndUpdate(
                 {'idArduino':{$eq: req.body.idArduino}},
-                {$set: {'temp': req.body.temp, 'hum': req.body.hum}},
+                {$set: {'tempAr': req.body.tempAr, 'humAr': req.body.humAr, 'estadoSolo': req.body.estadoSolo}},
                 {new:true}
             )
             .then((obj)=>{
