@@ -13,7 +13,7 @@ router.post('/', (req, res) => {
                idArduino: req.body.idArduino,
                tempAr: req.body.tempAr,
                humAr: req.body.humAr,
-               estadoSolo: req.body.estadoSolo
+               estadoSolo: req.body.estadoSolo,
             })
             newArduino.save()
             .then(result => {
